@@ -1,0 +1,54 @@
+{
+  "name": "graviss-meshio",
+  "author": "lumine-code",
+  "version": "1.0.0",
+  "description": "Read Abaqus, Gmsh, and Triangle FEM meshes.",
+  "keywords": [
+    "abaqus",
+    "calculix",
+    "gmsh",
+    "triangle",
+    "fem",
+    "engineering"
+  ],
+  "repository": "https://github.com/lumine-code/graviss-meshio",
+  "bugs": {
+    "url": "https://github.com/lumine-code/graviss-meshio/issues"
+  },
+  "homepage": "https://github.com/lumine-code/graviss-meshio#readme",
+  "license": "MIT",
+  "main": "./lib/main",
+  "files": [
+    "lib",
+    "spec"
+  ],
+  "engines": {
+    "lumine": "^1.0.0",
+    "node": ">=24"
+  },
+  "backgroundTips": [
+    "You can view an Abaqus, Gmsh, or Triangle mesh by opening a Graviss .grv document beside it."
+  ],
+  "scripts": {
+    "test": "lumine --test spec",
+    "lint": "eslint . --max-warnings 0",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "providedServices": {
+    "graviss.source": {
+      "description": "Decodes Abaqus, Gmsh, and Triangle meshes into Graviss model sessions.",
+      "versions": {
+        "1.0.0": "provideGravissSource"
+      }
+    }
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.8.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-n": "^18.2.2",
+    "globals": "^17.9.0",
+    "prettier": "^3.9.6"
+  }
+}
