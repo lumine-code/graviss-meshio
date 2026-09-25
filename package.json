@@ -26,9 +26,6 @@
     "lumine": "^1.0.0",
     "node": ">=24"
   },
-  "backgroundTips": [
-    "You can view an Abaqus, Gmsh, or Triangle mesh by opening a Graviss .grv document beside it."
-  ],
   "scripts": {
     "test": "lumine --test spec",
     "lint": "eslint . --max-warnings 0",
@@ -40,6 +37,11 @@
       "description": "Decodes Abaqus, Gmsh, and Triangle meshes into Graviss model sessions.",
       "versions": {
         "1.0.0": "provideGravissSource"
+      }
+    },
+    "background-tips.provider": {
+      "versions": {
+        "1.0.0": "provideBackgroundTips"
       }
     }
   },
