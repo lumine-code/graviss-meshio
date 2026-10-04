@@ -2,6 +2,9 @@
 
 Read Abaqus, Gmsh, and Triangle FEM meshes.
 
+> [!WARNING]
+> **This package is deprecated.** This repository is archived and no longer maintained. The documentation below is kept for historical reference.
+
 ## Features
 
 - **Text decoders**: reads Abaqus and CalculiX INP, ASCII Gmsh, and Triangle `.node` and `.ele` meshes.
